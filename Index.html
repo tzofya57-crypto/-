@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>הלכה יומית לעילוי נשמת ליאל</title>
+<style>
+  :root {
+    --bg: #f7f4ee;
+    --card-bg: #ffffff;
+    --text: #2b2620;
+    --text-soft: #6b6255;
+    --accent: #8a6d3b;
+    --accent-2: #b08d57;
+    --border: #e6ddc9;
+    --shadow: rgba(60, 45, 10, 0.08);
+    --locked-bg: #efeae0;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #1c1a16;
+      --card-bg: #262319;
+      --text: #f1ece0;
+      --text-soft: #b3a992;
+      --accent: #d8b878;
+      --accent-2: #b08d57;
+      --border: #3a3527;
+      --shadow: rgba(0,0,0,0.35);
+      --locked-bg: #211f17;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #1c1a16;
+    --card-bg: #262319;
+    --text: #f1ece0;
+    --text-soft: #b3a992;
+    --accent: #d8b878;
+    --accent-2: #b08d57;
+    --border: #3a3527;
+    --shadow: rgba(0,0,0,0.35);
+    --locked-bg: #211f17;
+  }
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+    line-height: 1.65;
+    padding: 20px 16px 40px;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 22px;
+  }
+  header h1 {
+    font-size: 1.3rem;
+    margin: 0 0 4px;
+    color: var(--accent);
+  }
+  header p {
+    margin: 0;
+    color: var(--text-soft);
+    font-size: 0.92rem;
+  }
+  .today-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 14px var(--shadow);
+    margin-bottom: 22px;
+  }
+  .today-card .date-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 14px;
+    border-bottom: 1px dashed var(--border);
+    padding-bottom: 10px;
+  }
+  .date-line .heb-date {
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: var(--accent);
+  }
+  .date-line .greg-date {
+    font-size: 0.85rem;
+    color: var(--text-soft);
+  }
+  .halacha-item {
+    margin-bottom: 16px;
+  }
+  .halacha-item:last-of-type { margin-bottom: 4px; }
+  .halacha-item .letter {
+    font-weight: 700;
+    color: var(--accent-2);
+  }
+  .halacha-item p {
+    margin: 6px 0 4px;
+    font-size: 1.02rem;
+  }
+  .halacha-item .source {
+    font-size: 0.82rem;
+    color: var(--text-soft);
+  }
+  .btn-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+  }
+  button {
+    font-family: inherit;
+    font-size: 0.95rem;
+    padding: 11px 16px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    flex: 1;
+    min-width: 1
